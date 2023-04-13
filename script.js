@@ -46,7 +46,7 @@ function Moviedetail(data) {
         <div class="movie-info">
             <h3>${movie.original_title}</h3>
             <span class="${color(movie.vote_average)}">${movie.vote_average
-            }</span>-
+            }</span>
         </div>
         <div class="overview">
             <h3>overview</h3>
