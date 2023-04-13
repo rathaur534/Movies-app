@@ -23,13 +23,18 @@
         background-color: var(--secondaar_color);
     }
     
+    form {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
     .icon {
         width: 60px;
         border-radius: 20px;
     }
     
     .search {
-        background-color: transparent;
+        width: 100%;
         border: 2px solid var(--primart_color);
         padding: 0.5rem 1rem;
         border-radius: 50px;
@@ -134,6 +139,9 @@
         }
         header {
             padding-right: 0.5rem;
+        }
+        .search {
+            width: 80%;
         }
     }
     
