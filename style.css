@@ -129,6 +129,9 @@ main {
     .movie-info {
         flex-direction: column-reverse;
     }
+      .search {
+            padding-inline: 0.5rem;
+        }
 }
 
 @media screen and (max-width:320px) {
