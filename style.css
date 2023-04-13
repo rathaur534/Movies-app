@@ -23,6 +23,11 @@ header {
     background-color: var(--secondaar_color);
 }
 
+.icon {
+    width: 60px;
+    border-radius: 20px;
+}
+
 .search {
     background-color: transparent;
     border: 2px solid var(--primart_color);
@@ -106,4 +111,25 @@ main {
 
 .movie:hover .overview {
     transform: translateY(0%);
+}
+
+.not-found {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:480px) {
+    .movie {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .movie {
+        width: 100%;
+    }
 }
