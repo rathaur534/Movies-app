@@ -121,10 +121,13 @@ main {
 
 
 /* media queries */
-
 @media screen and (max-width:480px) {
     .movie {
-        width: 40%;
+        width: 45%;
+        margin: 0.5rem
+    }
+    .movie-info {
+        flex-direction: column-reverse;
     }
 }
 
