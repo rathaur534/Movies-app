@@ -31,7 +31,11 @@ async function Mymovie() {
 const main = document.querySelector("#main");
 
 function Moviedetail(data) {
+    console.log(data)
     main.innerHTML = "";
+    if (data.results.length === 0) {
+        main.innerHTML = "<h1 class=not-found>No Results Found</h>"
+    }
     data.results.forEach(movie => {
 
         const newMovie = document.createElement('div');
@@ -42,7 +46,7 @@ function Moviedetail(data) {
         <div class="movie-info">
             <h3>${movie.original_title}</h3>
             <span class="${color(movie.vote_average)}">${movie.vote_average
-            }</span>
+            }</span>-
         </div>
         <div class="overview">
             <h3>overview</h3>
